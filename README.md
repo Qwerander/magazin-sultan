@@ -1,7 +1,7 @@
 # Магазин Султан
 
-# https://qwerander.github.io/magazin-sultan/ здесь можно посмотреть
-# https://qwerander.github.io/magazin-sultan/admin здесь находится админка
+##  https://qwerander.github.io/magazin-sultan/ здесь можно посмотреть
+## Для тестирования сверху добавлена маленькая кнопка для перехода в админку
 
 ## Available Scripts
 
