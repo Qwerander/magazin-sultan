@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/magazin-sultan/static/css/main.a1622291.css",
-    "main.js": "/magazin-sultan/static/js/main.0859834f.js",
+    "main.js": "/magazin-sultan/static/js/main.26594213.js",
     "static/media/orderCall.svg": "/magazin-sultan/static/media/orderCall.08b32f3b74be7ea1999b2c1e63c6abd3.svg",
     "static/media/logo.svg": "/magazin-sultan/static/media/logo.ec73e728fc53c834e5ba6317e77e839a.svg",
     "static/media/footerLogo.svg": "/magazin-sultan/static/media/footerLogo.8c0cee2670970caad4a32ba92a1798ec.svg",
@@ -38,10 +38,10 @@
     "static/media/arrowParamsDown.svg": "/magazin-sultan/static/media/arrowParamsDown.d8370bea4a633075ec711000c6bdeca8.svg",
     "static/media/arrowParamsUp.svg": "/magazin-sultan/static/media/arrowParamsUp.2418800dff48e31b054b713cdd3e6e93.svg",
     "main.a1622291.css.map": "/magazin-sultan/static/css/main.a1622291.css.map",
-    "main.0859834f.js.map": "/magazin-sultan/static/js/main.0859834f.js.map"
+    "main.26594213.js.map": "/magazin-sultan/static/js/main.26594213.js.map"
   },
   "entrypoints": [
     "static/css/main.a1622291.css",
-    "static/js/main.0859834f.js"
+    "static/js/main.26594213.js"
   ]
 }
