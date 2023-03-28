@@ -25,6 +25,14 @@ export const Header = () => {
     return (
         <HeaderStl>
             <div className="header__top">
+                <Button 
+                    text='Админка'
+                    handleClick={() => {navigate('/admin')}}
+                    position
+                    padding='0'
+                    bgColor='none'
+                    color='var(--dark)'
+                />
                 {!resize1000 &&
                     <Container>
                         <HeaderMenu />

@@ -17,9 +17,12 @@ type ButtonStlType = {
     zIndex?: string
     handleClick?: () => void
     type?: 'button' | 'submit'
+    position?: boolean
 }
 
 const ButtonStl = styled.button<ButtonStlType>`
+    position: ${props => props.position && 'absolute'};
+    left: ${props => props.position && '50%'};
     display: flex;
     gap: 12px;
     align-items: center;

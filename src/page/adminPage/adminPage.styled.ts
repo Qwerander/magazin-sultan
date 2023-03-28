@@ -4,6 +4,7 @@ export const AdminPageStl = styled.section`
     padding: 30px 0;
     .admin__title {
         margin-bottom: 30px;
+        align-self: flex-start;
     }
     .product {
         display: grid;

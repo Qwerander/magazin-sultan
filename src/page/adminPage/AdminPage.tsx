@@ -9,8 +9,10 @@ import { ReactComponent as EditSvg } from '../../assets/icons/edit.svg';
 import { useState } from 'react';
 import { careArray } from '../../helpers/typeCare';
 import { Modal } from '../../helperComponentsStyled/Modal';
+import { useNavigate } from 'react-router-dom';
 
 export const AdminPage = () => {
+    const navigate = useNavigate();
     const dispatch = useAppDispatch();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [productValues, setProductValues] = useState<ProductType>({
@@ -36,6 +38,14 @@ export const AdminPage = () => {
 
     return (
         <AdminPageStl>
+               <Button 
+                    text='В каталог'
+                    handleClick={() => {navigate('/')}}
+                    position
+                    padding='0'
+                    bgColor='none'
+                    color='var(--dark)'
+                />
             <Container columns>
                 <h1 className='admin__title'>Админка</h1>
                 <div className='admin'>

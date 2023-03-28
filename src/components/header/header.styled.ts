@@ -44,7 +44,7 @@ export const HeaderStl = styled.header`
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         .header {
             &__top {
                 &-left {
