@@ -1,10 +1,10 @@
 import { ChangeEvent } from "react";
-import { careArray } from "../../../helpers/typeCare";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { addTypeCare, removeTypeCare } from "../../../store/reducers/filtersSlice";
 
 export const FilterParams = () => {
     const careType = useAppSelector(state => state.filters.typeCare);
+    const careTypes = useAppSelector(state => state.products.type_care);
 
     const dispatch = useAppDispatch();
 
@@ -24,16 +24,16 @@ export const FilterParams = () => {
                 Типы уходы
             </h3>
             <ul className="params__filtersList">
-                {careArray.map(care => (
-                    <li key={care.typeCare}>
+                {careTypes.map(care => (
+                    <li key={care}>
                         <label>
                             <input
-                                checked={careType.includes(care.typeCare)}
-                                aria-label={care.typeCare}
+                                checked={careType.includes(care)}
+                                aria-label={care}
                                 onChange={handleChange}
                                 type="checkbox"
                             />
-                            <span>Уход {care.title}</span>
+                            <span>Уход {care}</span>
                         </label>
                     </li>
                 ))}

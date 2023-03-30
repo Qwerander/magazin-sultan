@@ -8,7 +8,7 @@
         "barcode": "4604049097501",
         "manufactur": "Grifon",
         "brand": "Grifon",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 222
     },
@@ -21,7 +21,7 @@
         "barcode": "4604049097502",
         "manufactur": "Boyscout",
         "brand": "Boyscout",
-        "type_care": ["Для тела", "Для волос"],
+        "type_care": ["за телом", "за волосами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 549
     },
@@ -34,7 +34,7 @@
         "barcode": "4604049097503",
         "manufactur": "Paclan",
         "brand": "Paclan",
-        "type_care": ["Для тела"],
+        "type_care": ["за телом"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 325
     },
@@ -47,7 +47,7 @@
         "barcode": "4604049097504",
         "manufactur": "Nivea",
         "brand": "Nivea",
-        "type_care": ["Для тела", "Для лица"],
+        "type_care": ["за телом", "за лицом"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 422
     },
@@ -60,7 +60,7 @@
         "barcode": "4604049097505",
         "manufactur": "HELP",
         "brand": "HELP",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 567
     },
@@ -73,7 +73,7 @@
         "barcode": "4604049097506",
         "manufactur": "Булгари Грин",
         "brand": "Булгари Грин",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 115
     },
@@ -86,7 +86,7 @@
         "barcode": "4604049097507",
         "manufactur": "Булгари Грин",
         "brand": "Булгари Грин",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 113
     },
@@ -99,7 +99,7 @@
         "barcode": "4604049097508",
         "manufactur": "Grifon",
         "brand": "Grifon",
-        "type_care": ["Для рук", "Для лица"],
+        "type_care": ["за руками", "за лицом"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 223
     },
@@ -112,7 +112,7 @@
         "barcode": "4604049097509",
         "manufactur": "Домашний сундук",
         "brand": "Домашний сундук",
-        "type_care": ["Для тела", "Для волос"],
+        "type_care": ["за телом", "за волосами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 488
     },
@@ -125,7 +125,7 @@
         "barcode": "4604049097510",
         "manufactur": "Nivea",
         "brand": "Nivea",
-        "type_care": ["Для тела"],
+        "type_care": ["за телом"],
         "description":  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 721
     },
@@ -138,7 +138,7 @@
         "barcode": "4604049097511",
         "manufactur": "Grifon",
         "brand": "Grifon",
-        "type_care": ["Для рук"],
+        "type_care": ["за руками"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 229
     },
@@ -151,7 +151,7 @@
         "barcode": "4604049097512",
         "manufactur": "Boyscout",
         "brand": "Boyscout",
-        "type_care": ["Для тела"],
+        "type_care": ["за телом"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 548
     },
@@ -164,7 +164,7 @@
         "barcode": "4604049097513",
         "manufactur": "Paclan",
         "brand": "Paclan",
-        "type_care": ["Для тела", "Для ног"],
+        "type_care": ["за телом", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 327
     },
@@ -177,7 +177,7 @@
         "barcode": "4604049097514",
         "manufactur": "Nivea",
         "brand": "Nivea",
-        "type_care": ["Для тела", "Для ног", "Для рук", "Для лица"],
+        "type_care": ["за телом", "за ногами", "за руками", "за лицом"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 428
     },
@@ -190,7 +190,7 @@
         "barcode": "4604049097515",
         "manufactur": "HELP",
         "brand": "HELP",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 523
     },
@@ -203,7 +203,7 @@
         "barcode": "4604049097516",
         "manufactur": "Булгари Грин",
         "brand": "Булгари Грин",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 117
     },
@@ -216,7 +216,7 @@
         "barcode": "4604049097517",
         "manufactur": "Булгари Грин",
         "brand": "Булгари Грин",
-        "type_care": ["Для рук", "Для ног"],
+        "type_care": ["за руками", "за ногами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 120
     },
@@ -229,7 +229,7 @@
         "barcode": "4604049097518",
         "manufactur": "Grifon",
         "brand": "Grifon",
-        "type_care": ["Для волос"],
+        "type_care": ["за волосами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 243
     },
@@ -242,7 +242,7 @@
         "barcode": "4604049097519",
         "manufactur": "Домашний сундук",
         "brand": "Домашний сундук",
-        "type_care": ["Для тела", "Для волос"],
+        "type_care": ["за телом", "за волосами"],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 588
     },
@@ -255,7 +255,7 @@
         "barcode": "4604049097520",
         "manufactur": "Nivea",
         "brand": "Nivea",
-        "type_care": ["Для тела", "Для ног", "Для рук"],
+        "type_care": ["за телом", "за ногами", "за руками"],
         "description":  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum soluta quisquam error quasi ab nostrum, iusto unde dolores et distinctio. Accusamus consectetur rem atque ad voluptatum tempore asperiores sint optio.",
         "price": 629
     }

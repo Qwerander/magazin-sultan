@@ -1,24 +1,41 @@
 import { Field, Form, Formik } from 'formik';
 import { ProductType, addProduct } from '../../../store/reducers/productsSlice';
-import { useAppDispatch } from '../../../store/hooks';
+import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { ProductFormStl } from './productForm.styled';
 import { Button } from '../../../ui/Button';
-import { careArray } from '../../../helpers/typeCare';
 import { v4 as uuid } from 'uuid';
-import { useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 
 interface ProductFormProps {
-	product: ProductType
+	product?: ProductType
 	textButton?: string
 	setIsModalOpen?: (value: boolean) => void
 }
 
 export function ProductForm({ product, textButton, setIsModalOpen }: ProductFormProps) {
 	const dispatch = useAppDispatch();
-	const [initialValues, setInitialValues] = useState<ProductType>(product);
+	const careTypes = useAppSelector(state => state.products.type_care)
+	const [initialValues, setInitialValues] = useState<ProductType>(product ?
+		product
+		: {
+			id: '',
+			url: '',
+			title: '',
+			type_volume: '',
+			volume: '',
+			barcode: '',
+			manufactur: '',
+			brand: '',
+			type_care: [''],
+			description: '',
+			price: 0,
+		});
+
 
 	useEffect(() => {
-		setInitialValues(product);
+		if (product) {
+			setInitialValues(product);
+		}
 	}, [product]);
 
 	return (
@@ -30,13 +47,15 @@ export function ProductForm({ product, textButton, setIsModalOpen }: ProductForm
 					{ resetForm },
 				) => {
 					dispatch(addProduct({ product: values }))
+					console.log(values);
+
 					if (setIsModalOpen) {
 						setIsModalOpen(false);
 					}
 					resetForm();
 				}}
 			>
-				{({ values, handleChange }) => {
+				{({ values, handleChange, handleBlur }) => {
 					return <Form className='form'>
 						<label className='form__label form__label--static'>
 							<input
@@ -47,7 +66,7 @@ export function ProductForm({ product, textButton, setIsModalOpen }: ProductForm
 							Уникальный индитификатор: {values.id}
 						</label>
 						<label className='form__label'>
-							<Field 
+							<Field
 								id="title"
 								name="title"
 								required
@@ -137,22 +156,46 @@ export function ProductForm({ product, textButton, setIsModalOpen }: ProductForm
 								Объём
 							</label>
 						</div>
-						<div className='form__care'>
-							<label>Типы ухода:</label>
-							{careArray.map((value) => (
-								<div key={value.typeCare} className='care__type'>
-									<label className='form__label form__label--care'>
-										<Field
-											type="checkbox"
-											name="type_care"
-											value={value.typeCare}
-											checked={values.type_care?.includes(value.typeCare)}
-										/>
-										<span>{value.title}</span>
-									</label>
-								</div>
-							))}
-						</div>
+						{product &&
+							<div className='form__care'>
+								<label>Типы ухода:</label>
+								{careTypes.map((care) => (
+									<div key={care} className='care__type'>
+										<label className='form__label form__label--care'>
+											<Field
+												type="checkbox"
+												name="type_care"
+												value={care}
+												checked={values.type_care?.includes(care)}
+											/>
+											<span>{care}</span>
+										</label>
+									</div>
+								))}
+							</div>
+						}
+						{!product &&
+							<label className='form__label'>
+								<Field
+									id="volume"
+									name="type_care"
+									type="text"
+									placeholder="Типы ухода через запятую"
+									onChange={(e: ChangeEvent<HTMLInputElement>) => {
+										const careArray = e.target.value.split(',');
+										handleChange({
+											target: {
+												name: 'type_care',
+												value: careArray,
+											},
+										});
+									}}
+									onBlur={handleBlur}
+									value={values.type_care?.join(',')}
+									multiple
+								/>
+							</label>
+						}
 						<label className='form__label'>
 							<Field
 								id="price"

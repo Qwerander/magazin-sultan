@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Filter } from './Filter';
-import { careArray } from '../../helpers/typeCare';
+import { useAppSelector } from '../../store/hooks';
 
 export const FilterCatalogStl = styled.div`
     display: flex;
@@ -16,13 +16,15 @@ export const FilterCatalogStl = styled.div`
 
 
 export const FiltersCatalog = () => {
+    const careTypes = useAppSelector(state => state.products.type_care);
+    
     return (
         <FilterCatalogStl>
-            {careArray.map(care => (
+            {careTypes.map(care => (
                 <Filter
-                    key={care.typeCare}
-                    text={care.title}
-                    typeCare={care.typeCare}
+                    key={care}
+                    text={care}
+                    typeCare={care}
                 />
             ))}
 

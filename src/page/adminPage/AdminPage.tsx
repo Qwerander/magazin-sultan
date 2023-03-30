@@ -7,14 +7,15 @@ import { Button } from '../../ui/Button';
 import { ReactComponent as DeleteSvg } from '../../assets/icons/delete.svg';
 import { ReactComponent as EditSvg } from '../../assets/icons/edit.svg';
 import { useState } from 'react';
-import { careArray } from '../../helpers/typeCare';
 import { Modal } from '../../helperComponentsStyled/Modal';
 import { useNavigate } from 'react-router-dom';
+import { ChangeTypeCare } from '../../components/adminComponents/changeTypeCare/ChangeTypeCare';
 
 export const AdminPage = () => {
     const navigate = useNavigate();
     const dispatch = useAppDispatch();
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const careTypes = useAppSelector(state => state.products.type_care);
     const [productValues, setProductValues] = useState<ProductType>({
         id: '',
         url: '',
@@ -24,7 +25,7 @@ export const AdminPage = () => {
         barcode: '',
         manufactur: '',
         brand: '',
-        type_care: [...careArray.map(care => care.typeCare)],
+        type_care: [...careTypes.map(care => care)],
         description: '',
         price: 0,
     });
@@ -49,7 +50,7 @@ export const AdminPage = () => {
             <Container columns>
                 <h1 className='admin__title'>Админка</h1>
                 <div className='admin'>
-                    <ProductForm product={productValues} />
+                    <ProductForm  />
                     <div className='product__title'>
                         <span>Штрихкод</span>
                         <span>Бренд</span>
@@ -100,6 +101,7 @@ export const AdminPage = () => {
                         handleClick={() => dispatch(deleteAllProducts())}
                     />
                 </div>
+                <ChangeTypeCare />
             </Container>
             {isModalOpen &&
                 <Modal toggle={setIsModalOpen}>
